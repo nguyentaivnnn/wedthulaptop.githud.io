@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('your_background_image.jpg'); /* Thay 'your_background_image.jpg' bằng đường dẫn đến hình nền của bạn */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+        }
+
+        .register-container {
+            background-color: rgba(0, 0, 0, 0.7); /* Màu nền với độ trong suốt */
+            border: 1px solid #ccc;
+            padding: 20px;
+            width: 300px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .register-container h2 {
+            margin-bottom: 20px;
+        }
+
+        .register-form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .register-form label {
+            margin-bottom: 8px;
+        }
+
+        .register-form input {
+            padding: 8px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+        }
+
+        .register-form button {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="register-container">
+        <h2>Đăng Ký</h2>
+        <p>Chưa có tài khoản? Đăng ký ngay!</p>
+
+        <form class="register-form">
+            <label for="fullname">Họ và Tên:</label>
+            <input type="text" id="fullname" name="fullname" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="newUsername">Tên Đăng Nhập:</label>
+            <input type="text" id="newUsername" name="newUsername" required>
+
+            <label for="newPassword">Mật Khẩu:</label>
+            <input type="password" id="newPassword" name="newPassword" required>
+
+            <button type="submit">Đăng Ký</button>
+        </form>
+    </div>
+</body>
+</html>
